@@ -7,7 +7,7 @@ API_KEY = "AIzaSyAhvAixcur6-KcxzmPYRysoXJkJvLq8V7Q"
 text=""
 
 if len(sys.argv)>1:
-    text = 'Help with any question i ask about linux bash commands only. other wise if my question is off topic please only say : "I am sorry, i only answer bash specific questions" answer my question with examble usage. So my questions is :  " '+ sys.argv[1]
+    text = 'Help with any question i ask about linux bash commands only. other wise if my question is off topic please only say : "I am sorry, i only answer bash specific questions" answer my question with examble usage write examble usage: then the examble, before answering write Genie: then the answer . So my questions is :  " '+ sys.argv[1]
 else:
     exit()
 
@@ -26,6 +26,8 @@ data = {
     }
   ]
 }
+
+
 
 # Send POST request with JSON data and headers
 headers = {'Content-Type': 'application/json'}
